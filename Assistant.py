@@ -47,8 +47,9 @@ while True:
             pylib.openUrl("https://open.spotify.com")
         elif chosenwebapp == "other":
             givenurl = input("Please enter the URL of the webapp you would like to open: ")
-            print(f"Opening '{givenurl}'.")
-            pylib.text_to_speech("Opening requested app.")
+            websitetitle = pylib.getWebsiteTitle(givenurl)
+            print(f"Opening '{websitetitle}'.")
+            pylib.text_to_speech(f"Opening '{websitetitle}'.")
             pylib.openUrl(givenurl)
         else:
             print("That's not a webapp.")
