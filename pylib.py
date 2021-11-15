@@ -1,7 +1,7 @@
+from os import name
 import webbrowser
 import pyttsx3
 from datetime import *
-import urllib.request
 
 def text_to_speech(text):
     engine = pyttsx3.init()
@@ -22,7 +22,6 @@ def create_note():
     text_to_speech("Note created.")
     
 def getWebsiteTitle(url):
-    # (copilot information below)
     # Get the url's website name and return it
     # for example: https://github.com returns github
     # Note: This should also work for 'http://'
