@@ -12,7 +12,7 @@ while True:
     if maincommands == "help" or maincommands == "'help'":
         print("Here's some help.")
         pylib.text_to_speech("Here's some help.")
-        print("Commands: note, clock, quit, matrix, sourcecode, webapp")
+        print("Commands: note, clock, quit, sourcecode, webapp")
     elif maincommands == "quit":
         sys.exit(0)
     elif maincommands == "clock":
